@@ -2,14 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  height: 100vw;
-  padding-top: 80px;
+  margin-top: 170px;
   overflow: hidden;
   background: rgb(255, 245, 245);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh;
+  height: 100%;
 }
 .menucard {
   height: 520px;

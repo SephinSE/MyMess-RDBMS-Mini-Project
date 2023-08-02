@@ -39,7 +39,7 @@ const Admstudentlist = (admAuth) => {
   
 
   return (
-    <div>
+    <div className='admstdlist'>
       {admAuth.admAuth && (<>
       <div className='searchInput'>
         <input

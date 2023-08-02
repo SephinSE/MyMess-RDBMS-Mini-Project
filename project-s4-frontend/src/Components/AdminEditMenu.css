@@ -1,15 +1,14 @@
 .admmenuContainer {
-    margin-top: -100px;
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     background: rgb(255, 245, 245);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    height: 100%;
 }
 .admmenuLabel {
     margin-right: 20px;
@@ -86,7 +85,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     background: rgb(255, 245, 245);
     background-repeat: no-repeat;
     background-size: cover;

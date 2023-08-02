@@ -11,7 +11,8 @@ html, body {
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Inter', sans-serif;
-  overflow: hidden;
+  background-color: rgb(255, 245, 245);
+  overflow: visible;
 }
 .totalContainer{
   height: 100vh;
@@ -103,7 +104,8 @@ html, body {
   border-radius: 50%;
   margin-left: 5px;
   transition: 0.1s ease;
-  box-shadow:  inset 0 0 0 2.5px #FF00003D;
+  box-shadow:  inset 0 0 0 2.5px #ff00005a;
+  /* box-shadow:  inset 0 0 0 2.5px #ff0000c8; */
 }
 .radioButton2 {
   content: "";
@@ -112,8 +114,10 @@ html, body {
   border-radius: 50%;
   margin-left: 5px;
   transition: 0.1s ease;
-  box-shadow:  inset 0 0 0 7px #FF00003D;
+  box-shadow:  inset 0 0 0 7px #ff00005a;
+  /* box-shadow:  inset 0 0 0 7px #ff0000c8; */
   position: absolute;
+  /* visibility: hidden; */
 }
 .radioTile {
   background: rgba(255, 255, 255, 0.63);
@@ -151,7 +155,9 @@ input[type="radio"]:checked + .radioButton {
   box-shadow:  inset 0 0 0 2.5px rgba(255, 0, 0, 0.785);
 }
 input[type="radio"]:checked + .radioButton + .radioButton2 {
-  box-shadow:  inset 0 0 0 8vw rgba(255, 0, 0, 0.785);
+  box-shadow:  inset 0 0 0 8vw rgba(255, 0, 0, 0.784);
+  /* visibility: visible;
+  transition: 0.2s ease; */
 }
 .radioTile:hover > label > .labelText + .radioButtonDiv > input[type="radio"]:checked + .radioButton {
   box-shadow:  inset 0 0 0 2.5px rgb(255, 255, 255);

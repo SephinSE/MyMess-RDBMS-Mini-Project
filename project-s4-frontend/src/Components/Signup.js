@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import Axios from 'axios';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import logo from '../assets/logo.png'
 import { useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 const Signup = () => {
+    const navigate = useNavigate();
+
     const [Name, setName] = useState('')
     const [Email, setEmail] = useState('')
     const [StudentID, setStudentID] = useState('')
@@ -19,7 +23,8 @@ const Signup = () => {
     // Function to trigger the page reload after registration is completed successfully
     const handleReload = () => {
         alert("Registration completed successfully!");
-        window.location.reload();
+        // window.location.reload();
+        navigate('/login')
     };
 
     // Function to collect data and trigger the registration process

@@ -66,7 +66,7 @@ const navigate = useNavigate()
                     <div className="MyMessText">
                          MyMess
                     </div>
-                    <div className="MyMessTagline">
+                    <div className="loginMyMessTagline">
                         the #1 destination for
                         all your mess needs
                     </div>

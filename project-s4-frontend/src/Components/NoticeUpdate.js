@@ -27,7 +27,7 @@ const NoticeUpdate = () => {
       <textarea className="feed"
         value={text}
         onChange={handleChange}
-        placeholder="Type new news/nottification here..."
+        placeholder="Type new news/notification here..."
         rows="4"
         cols="50"
       ></textarea>

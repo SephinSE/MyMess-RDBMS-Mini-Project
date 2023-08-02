@@ -1,5 +1,5 @@
 .liveBillContainer {
-    margin-top: -180px;
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,12 +9,18 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 120vh;
+    height: 100%;
 }
 .liveBillHeading {
     font-size: 38px;
     color: #333;
     margin-bottom: 60px;
+
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 .liveBillTable {
     border-radius: 8px;

@@ -1,15 +1,10 @@
 .admHomeContainer {
-    overflow: hidden;
     background: rgb(255, 245, 245);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
-}
-#adminHeading{
-    margin-top: 5%;
-    margin-left: 42%;
-    background-color: white;
+    height: 100%;
+    margin-top: 120px;
 }
 #seeFeeDefaulters{
 margin-left: 2%;
@@ -31,3 +26,29 @@ text-align: center;
     padding-bottom: 2%;
     margin-top: 0;
 }
+.admincard {
+    color: #fff;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  
+    border-radius: 20px;
+    background: #F15756; /*#ed5a52*/
+    width: 260px;
+    height: 90px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  .admincard:hover {
+    background: #444;
+    transform: scale(1.05);
+    transition: 0.2s ease;
+    color: #F15756;
+  }

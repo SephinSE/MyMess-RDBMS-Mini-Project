@@ -4,7 +4,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    height: 100%;
+
 }
 .feedbox{
     display: flex;
@@ -14,7 +15,7 @@
     margin: 0 auto;
     max-width: 600px;
     background-color: #FFCACA;
-    margin-top: 10%;
+    margin-top: 220px;
     border-radius: 20px;
     
 }

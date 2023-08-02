@@ -25,7 +25,7 @@ const Home = ({auth,loginStatus}) => {
     navigate('/feedback')
   }
   const handleQRcode=()=>{
-    navigate('/qr')
+    navigate('/ScanQR')
   }
   const handleMessCut=()=>{
     navigate('/messcut')
@@ -90,35 +90,35 @@ const Home = ({auth,loginStatus}) => {
 
         <div className="card-container">
             <div className="card" id="viewProfile" onClick={handleProfile}>
-              <img src={viewProfile} alt="View Profile"/>
+              <img draggable='false' src={viewProfile} alt="View Profile"/>
               <button className="boxText">View Profile</button>
             </div>
             <div className="card" id="scanQR" onClick={handleQRcode}>
-              <img src={scanQR} alt="Scan QR Code"/>
+              <img draggable='false' src={scanQR} alt="Scan QR Code"/>
               <button className="boxText">Scan QR Code</button>
             </div>
             <div className="card" id="liveBill" onClick={handleMessbill}>
-              <img src={liveBill} alt="Live Bill Tracking"/>
+              <img draggable='false' src={liveBill} alt="Live Bill Tracking"/>
               <button className="boxText">Live Bill Tracking</button>
             </div>
             <div className="card" id="messCut" onClick={handleMessCut}>
-              <img src={messCut} alt="Online Mess Cut"/>
+              <img draggable='false' src={messCut} alt="Online Mess Cut"/>
               <button className="boxText">Online Mess Cut</button>
             </div>
             <div className="card" id="payBill" onClick={handlePayment}>
-              <img src={payBill} alt="Pay Mess Bill"/>
+              <img draggable='false' src={payBill} alt="Pay Mess Bill"/>
               <button className="boxText">Pay Mess Bill</button>
             </div>
             <div className="card" id="feedback" onClick={handleFeedback}>
-              <img src={feedback} alt="Feedback & Suggestions"/>
+              <img draggable='false' src={feedback} alt="Feedback & Suggestions"/>
               <button className="boxText">Feedback & Suggestions</button>
             </div>
             <div className="card" id="messMenu" onClick={handleMenu}>
-              <img src={messMenu} alt="Mess Actions"/>
+              <img draggable='false' src={messMenu} alt="Mess Actions"/>
               <button className="boxText">View Menu</button>
             </div>
             <div className="card" id="rules" onClick={handleRules}>
-              <img src={rules} alt="Rules & Regulations"/>
+              <img draggable='false' src={rules} alt="Rules & Regulations"/>
               <button className="boxText">Rules & Regulations</button>
             </div>        
           </div>

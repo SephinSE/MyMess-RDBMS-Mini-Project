@@ -5,7 +5,10 @@
   font-size: 20px;
   font-weight: 500;
 }
-
+.admstdlist {
+  margin-top: 80px;
+  overflow-y: auto;
+}
 .table-container {
     margin: 20px;
     background-color: white;

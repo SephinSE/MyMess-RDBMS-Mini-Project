@@ -11,9 +11,12 @@ const Navbarx = ({ studAuth, setAuth, admAuth, setAdmAuth,loginStatus }) => {
   const navigate = useNavigate();
   const location = useLocation();
   const { pathname } = location;
-  
+
   const handleNotification=()=>{
-    navigate('/notifications')
+    navigate('/notifications');
+  }
+  const handleProfile=()=>{
+    navigate('/profile');
   }
   const handleLogout = () => {
     Axios.get('http://localhost:8800/logout', { withCredentials: true })
@@ -45,7 +48,7 @@ const Navbarx = ({ studAuth, setAuth, admAuth, setAdmAuth,loginStatus }) => {
       {shouldRenderNav && (
         <div className='navMyMessLogo'>
           <div className="navMyMessImgDiv">
-              <img className="navMyMessImg" src={myMess} alt="MyMess"/>
+              <img draggable='false' className="navMyMessImg" src={myMess} alt="MyMess"/>
           </div>
           <div className="navMyMessTextDiv">
               <div className="navMyMessText">
@@ -65,17 +68,17 @@ const Navbarx = ({ studAuth, setAuth, admAuth, setAdmAuth,loginStatus }) => {
               <div className='theActualUserBar'>
                 {/* <Link to="/home">Home</Link> */}
                 {/* <Link to="/qr">Scan QR</Link> */}
-                <Link to="/profile" className='userLabel'>Mess No. {loginStatus.studentid}</Link>
+                <div className='userLabel' onClick={handleProfile}>Mess No. {loginStatus.studentid}</div>
                 {/* <button id ="logoutButtonId" onClick={handleLogout}>Logout</button> */}
 
                 
-                <img src={notifications} alt="Notifications" className="notifications" onClick={handleNotification}/>
-                <img src={settings} alt="Settings" className="settings"/>
+                <img draggable='false' src={notifications} alt="Notifications" className="notifications" onClick={handleNotification}/>
+                <img draggable='false' src={settings} alt="Settings" className="settings"/>
                 
                 <div className="optionsContainer">
                   <input type="checkbox" id="toggleSelect"/>
                   <label for="toggleSelect">
-                      <img src={options} alt="Options" className="options"/>
+                      <img draggable='false' src={options} alt="Options" className="options"/>
                   </label>
                   <ul className="optionList" type="none">
                       <div className="listDiv">
@@ -83,8 +86,9 @@ const Navbarx = ({ studAuth, setAuth, admAuth, setAdmAuth,loginStatus }) => {
                           <li className='outLinkList'><a href='https://github.com/Ambady1/project-s4-backend/' className='navOutLink1'>Help</a></li>
                           <li className='navListItem2' onClick={handleLogout}>Log Out</li>
                           <li className='outLinkList'><a href='https://github.com/Ambady1/project-s4-frontend/' className='navOutLink2'>About Us</a></li>
-                      </div>                    
+                      </div>
                   </ul>
+                  
                 </div>
 
               </div>

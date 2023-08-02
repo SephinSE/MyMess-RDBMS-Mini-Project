@@ -24,7 +24,8 @@ import Profile from './Components/Profile';
 import Page1 from './Components/Page1';
 import Notifications from './Components/Notification';
 import Rule from './Components/Rules';
-
+import PayBill from './Components/PayBill';
+import ScanQR from './Components/ScanQR';
 
 function App() {
   const [studAuth, setAuth] = useState(false)
@@ -69,9 +70,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Main />} />
           <Route path='/home' element={<Home auth={studAuth} loginStatus={loginData} />} />
-          <Route path='/qr' element={<div align='center'><h1>Scan QR</h1><h2>QR Code Scanning feature will be implemented in the near future.</h2></div>} />
+          <Route path='/ScanQR' element={<ScanQR/>} />
           <Route path='/profile' element={<Profile loginStatus={loginData} />} />
-          <Route path='/paybill' element={<div align='center'><h1>Pay Mess Bill</h1><h2>Mess Bill payment feature will be implemented in the near future.</h2></div>} />
           <Route path='/menu' element={<Menu auth={studAuth} />} />
           <Route path='/feedback' element={<Feedback auth={studAuth} loginStatus={loginData} />} />
           <Route path='/adminlogin' element={<AdminLogin />} />
@@ -84,8 +84,9 @@ function App() {
           <Route path='/livemessbill' element={<Livemessbill loginStatus={loginData} />} />
           <Route path='/notifications' element={<Notifications/>} />
           <Route path='/rules' element={<Rule/>} />
-
+          <Route path='/paybill' element={<PayBill/>} />
         </Routes>
+
       </BrowserRouter>
     </div>
   )

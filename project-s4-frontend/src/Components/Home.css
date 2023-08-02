@@ -1,15 +1,19 @@
 .homeTotalContainer {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   background: rgb(255, 245, 245);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Inter', sans-serif;
-  margin-top: -10px;
+  margin-top: 80px;
+  overflow: hidden;
+}
+.homeContainer {
+  overflow: hidden;
 }
 .welcomeText {
   color: #444;
@@ -87,8 +91,8 @@ animation-iteration-count: infinite;
 animation-timing-function: linear;
 -webkit-animation-name: ticker;
 animation-name: ticker;
--webkit-animation-duration: 30s;
-animation-duration: 30s;
+-webkit-animation-duration: 40s;
+animation-duration: 40s;
 }
 .ticker:hover {
   -webkit-animation-play-state: paused;
@@ -125,9 +129,7 @@ animation-duration: 30s;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 1160px;
-  margin: auto;
-  margin-top: 40px;
+  margin: 40px 100px 0px 100px;
 }
   
 .card {

@@ -21,11 +21,11 @@ const Notification = () => {
     <div className='notifProfileContainer'>
       <h1 className='notifProfileHead'>Notification</h1>
       <div className='notifProfileDetails'>
-        <ol className='notifPinkContainer'>
+        <div className='notifPinkContainer'>
           {newsItems.map((item) => (
-            <li className='notifPinkContent'>{item.content}</li>
+            <p className='notifPinkContent'>{item.content}</p>
           ))}
-        </ol>
+        </div>
       </div>
     </div>
   );

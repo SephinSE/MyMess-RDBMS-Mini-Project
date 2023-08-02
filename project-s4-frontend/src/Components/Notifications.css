@@ -3,11 +3,18 @@
     flex-direction: column;
     align-items: center;
     background-color: rgb(255, 245, 245);
-    height: 100vh;
+    height: 100%;
+    margin-top: 80px;
 }
 .notifProfileHead {
     font-size: 38px;
     color: #333;
+
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 .notifProfileDetails {
     display: flex;
@@ -27,7 +34,7 @@
 .notifPinkContent {
     background-color: #DAB7B7;
     padding: 8px;
-    margin: 20px 20px 20px 0px;
+    margin: 20px 20px 20px 20px;
     border-radius: 9px;
     color: #AC5F5F;
 }

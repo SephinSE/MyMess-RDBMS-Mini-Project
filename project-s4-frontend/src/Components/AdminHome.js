@@ -33,24 +33,24 @@ const AdminHome = (admAuth) => {
             <h1 className='welcomeText' >Welcome Admin</h1>
 
             <div className="card-container">
-              <div className="card" onClick={handleStudentlist}>
+              <div className="admincard" onClick={handleStudentlist}>
                 <h2 >See student list</h2>
-                <p className="admhomepara" id='clickStudents'>Click here to see the list of students </p>
+                {/* <p className="admhomepara" id='clickStudents'>Click here to see the list of students </p> */}
             
               </div>
-              <div className="card" onClick={handleDefaulters}>
+              <div className="admincard" onClick={handleDefaulters}>
                 <h2 id='seeFeeDefaulters'>See fee defaulters</h2>
-                <p className="admhomepara" id='clickDefaulters'>Click here to see the list of fee defaulters</p>
+                {/* <p className="admhomepara" id='clickDefaulters'>Click here to see the list of fee defaulters</p> */}
                 
               </div>
-              <div className="card" onClick={handleEditMenu}>
+              <div className="admincard" onClick={handleEditMenu}>
                 <h2>Edit menu</h2>
-                <p className="admhomepara">Click here to edit menu</p>
+                {/* <p className="admhomepara">Click here to edit menu</p> */}
                 
               </div>
-              <div className="card" onClick={handleUpdateNotice}>
+              <div className="admincard" onClick={handleUpdateNotice}>
                 <h2>Update notice</h2>
-                <p className="admhomepara">Click here to update notice</p>
+                {/* <p className="admhomepara">Click here to update notice</p> */}
                 
               </div>
             </div>

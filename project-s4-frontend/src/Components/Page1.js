@@ -84,7 +84,7 @@ const Page1 = () => {
                     <div className="MyMessText">
                         MyMess
                     </div>
-                    <div className="MyMessTagline">
+                    <div className="page1MyMessTagline">
                         the #1 destination for
                         all your mess needs
                     </div>

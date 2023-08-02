@@ -2,22 +2,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    overflow: scroll;
     background: rgb(255, 245, 245);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    height: 100%;
+    margin-top: 80px;
 }
 .profileHead {
-    font-size: 38px;
-    color: #333;
+    color: #444;
+    font-family: 'Inter';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 .profileDetails {
     display: flex;
     color: #333;
     text-align: center;
-    font-family: Inter;
+    font-family: 'Inter';
     font-size: 25.058px;
     font-style: normal;
     font-weight: 600;
